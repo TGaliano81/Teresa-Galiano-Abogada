@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teresa Galiano - Abogada</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f5f9ff;
+      color: #1a1a1a;
+    }
+    header {
+      background-color: #0a1f44;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #142f6e;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #b3003c;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #142f6e;
+      border-bottom: 2px solid #b3003c;
+      padding-bottom: 0.5rem;
+    }
+    .servicio {
+      margin-bottom: 1.5rem;
+    }
+    .noticia {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+    }
+    footer {
+      background-color: #0a1f44;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .pago {
+      background-color: #eaeaff;
+      padding: 1rem;
+      border: 2px solid #b3003c;
+      border-radius: 5px;
+      text-align: center;
+    }
+  </style>
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAU1KsuR4VOEBmUKBMb6nbhNbKPCh38k1f1Y97BHhVsxjg3xl3LtaDgmimbYJdJeHYcGivRtQRFZ45m_E&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Teresa Galiano</h1>
+    <p>Abogada - Comprometida con la justicia</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#noticias">Noticias Jurídicas</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#pago">Plataforma de Pago</a>
+  </nav>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy Teresa Galiano, abogada especializada en derecho civil y penal. Con más de 10 años de experiencia, mi misión es brindar asesoría legal efectiva, humana y profesional a mis clientes. Trabajo con compromiso, transparencia y respeto por la ley.</p>
+  </section>
+
+  <section id="noticias">
+    <h2>Noticias Jurídicas</h2>
+    <div class="noticia">
+      <strong>14 de abril de 2025:</strong> Nueva reforma del Código Civil enfocada en la protección de consumidores.
+    </div>
+    <div class="noticia">
+      <strong>6 de abril de 2025:</strong> El Tribunal Supremo emite sentencia clave sobre herencias en parejas no casadas.
+    </div>
+  </section>
+
+  <section id="servicios">
+    <h2>Servicios que ofrezco</h2>
+    <div class="servicio">
+      <strong>Asesoría Legal</strong>
+      <p>Consulta personalizada para resolver tus dudas legales en cualquier ámbito del derecho civil o penal.</p>
+    </div>
+    <div class="servicio">
+      <strong>Representación Judicial</strong>
+      <p>Defensa y representación en juicios, demandas, recursos y procedimientos legales.</p>
+    </div>
+    <div class="servicio">
+      <strong>Redacción de Contratos</strong>
+      <p>Elaboración, revisión y negociación de contratos civiles y comerciales.</p>
+    </div>
+  </section>
+
+  <section id="pago">
+    <h2>Plataforma de Pago</h2>
+    <div class="pago">
+      <p>Selecciona tu servicio y realiza el pago de forma segura:</p>
+      <div id="paypal-container-5MA7END3JGK2L"></div>
+      <script>
+        paypal.HostedButtons({
+          hostedButtonId: "5MA7END3JGK2L",
+        }).render("#paypal-container-5MA7END3JGK2L");
+      </script>
+      <p style="margin-top: 1rem; font-size: 0.9rem;">*El botón de pago cargará el servicio en tu cesta de compra de PayPal.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Teresa Galiano - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
